@@ -6,20 +6,6 @@ async function getImages(count) {
   return data.slice(0, count).map((img) => img.url);
 }
 
-function getUpdatedIndex(index, right) {
-  if (right) {
-    if (index === 2) {
-      return 0;
-    }
-    return index + 1;
-  } else {
-    if (index === 0) {
-      return 2;
-    }
-    return index - 1;
-  }
-}
-
 function shiftImages(imageElements) {
   imageElements.forEach(({ pos, img }) => {
     if (
