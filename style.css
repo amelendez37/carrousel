@@ -1,0 +1,34 @@
+#body {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100vw;
+}
+
+.img {
+  /* padding: 1rem; */
+}
+
+.btn-container-outer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn-container-outer {
+  position: fixed;
+  bottom: 10px;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  background-color: black;
+  width: 1px;
+  height: 100vh;
+}
